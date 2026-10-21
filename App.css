@@ -1,0 +1,144 @@
+.page {
+  min-height: 100vh;
+  background-color: #eef2f7;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 30px 20px;
+}
+
+.portfolio-card {
+  width: 680px;
+
+  background-color: white;
+
+  padding: 35px 45px;
+
+  border-radius: 18px;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Profile */
+
+.profile {
+  text-align: center;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  border: 5px solid #2864d7;
+}
+
+.profile h1 {
+  color: #2256c7;
+
+  margin: 15px 0 5px;
+
+  font-size: 32px;
+}
+
+.profile h3 {
+  color: #63758e;
+
+  font-size: 20px;
+
+  margin-bottom: 25px;
+}
+
+/* Line */
+
+hr {
+  border: none;
+
+  border-top: 1px solid #ddd;
+
+  margin: 25px 0;
+}
+
+/* Sections */
+
+section {
+  margin-top: 28px;
+}
+
+section h2 {
+  color: #2256c7;
+
+  font-size: 24px;
+
+  margin-bottom: 18px;
+}
+
+section p {
+  color: #172b4d;
+
+  font-size: 18px;
+
+  line-height: 1.6;
+
+  margin: 10px 0;
+}
+
+section strong {
+  color: #111;
+}
+
+/* About */
+
+.about-text {
+  max-width: 620px;
+}
+
+/* Skills */
+
+.skills-container {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.skill-box {
+  background-color: #eef5ff;
+
+  padding: 15px;
+
+  border-radius: 9px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.skill-box span {
+  font-size: 18px;
+
+  color: #172b4d;
+}
+
+.skill-box strong {
+  color: #2256c7;
+
+  font-size: 18px;
+}
+
+/* Contact */
+
+a {
+  color: #1558d6;
+
+  margin-left: 6px;
+
+  text-decoration: underline;
+}
