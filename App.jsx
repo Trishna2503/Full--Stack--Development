@@ -1,31 +1,39 @@
-import Profile from "./components/Profile";
-import PersonalDetails from "./components/PersonalDetails";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
+import React, { useState } from "react";
 
-import "./App.css";
+// Reusable function
+function calculateTotal(marks, bonus) {
+  return marks + bonus;
+}
 
+// Child component
+function Student({ name, department }) {
+  const [marks, setMarks] = useState(80);
+
+  return (
+    <div>
+      <h2>Student Details</h2>
+      <p>Name: {name}</p>
+      <p>Department: {department}</p>
+      <p>Marks: {marks}</p>
+
+      <button onClick={() => setMarks(marks + 5)}>
+        Add 5 Marks
+      </button>
+
+      <p>Total: {calculateTotal(marks, 10)}</p>
+    </div>
+  );
+}
+
+// Parent component
 function App() {
   return (
-    <div className="page">
-
-      <div className="portfolio-card">
-
-        <Profile />
-
-        <hr />
-
-        <PersonalDetails />
-
-        <About />
-
-        <Skills />
-
-        <Contact />
-
-      </div>
-
+    <div>
+      <h1>ReactJS Laboratory</h1>
+      <Student
+        name="TRISHNA A K"
+        department="Information Technology"
+      />
     </div>
   );
 }
